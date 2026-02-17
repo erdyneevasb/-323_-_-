@@ -135,13 +135,10 @@ namespace ИСИП323_Эрдынеева_Суранзан
 
         private void NextButton2_Click(object sender, RoutedEventArgs e)
         {
-            
-            MessageBox.Show("Переход к следующей функции", "Информация",
-                          MessageBoxButton.OK, MessageBoxImage.Information);
-
-            // ThirdWindow thirdWindow = new ThirdWindow();
-            // thirdWindow.Show();
-            // this.Close();
+            // Переходим к третьему окну
+            ThirdWindow thirdWindow = new ThirdWindow();
+            thirdWindow.Show();
+            this.Close();
         }
     }
 }
