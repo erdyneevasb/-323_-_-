@@ -6,4 +6,4 @@
 методом "белого ящика".
 - Разработчик: студентка группы ИСИП-323 Эрдынеева С.Б.
 - Вариант: 15
-  1. ![Первое задание](https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Markdown-mark.svg/1920px-Markdown-mark.svg.png "Логотип Markdown")
+  1. ![Первое задание](ИСИП323_Эрдынеева_Суранзан/images/nmath1.png)
