@@ -7,6 +7,32 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Image Grid.Column="0" Grid.ColumnSpan="3" x:Name="Image1" Source="images/nmath1.png" ToolTip="Пример для вычисления"/>
+        <TextBlock Grid.Column="0" Grid.Row ="1" Height="50" Width="120" Background="WhiteSmoke" Text="X" Margin="10" FontSize="30" TextAlignment="Center"/>
+        <TextBox x:Name="xValue" Grid.Column="1" Grid.Row="1" Margin="10" ToolTip="Введите значение x" FontSize="30"></TextBox>
         
+        <TextBlock Grid.Column="0" Grid.Row ="2" Height="50" Width="120" Background="WhiteSmoke" Text="Y" Margin="10" FontSize="30" TextAlignment="Center"/>
+        <TextBox x:Name="yValue" Grid.Column="1" Grid.Row="2" Margin="10" ToolTip="Введите значение y" FontSize="30"></TextBox>
+
+        <TextBlock Grid.Column="0" Grid.Row ="3" Height="50" Width="120" Background="WhiteSmoke" Text="Z" Margin="10" FontSize="30" TextAlignment="Center"/>
+        <TextBox x:Name="zValue" Grid.Column="1" Grid.Row="3" Margin="10" ToolTip="Введите значение z" FontSize="30"></TextBox>
+        <TextBlock Grid.Column="0" Grid.Row="4" Margin="10" Text="Result" FontSize="30" TextAlignment="Center"></TextBlock>
+        <TextBox x:Name="ResultBox" Grid.Column="1" Grid.Row="4" Text="0" FontSize="30" Margin="10" ToolTip="Здесь отобразится результат"></TextBox>
+        <Button x:Name="NextButton" Grid.Column="2" Grid.Row="1" Margin="50, 8, 50, 12" Content="Next" FontSize="30" Background="Ivory" ToolTip="Перейти к следующей функции"></Button>
+        <Button x:Name="ResetButton" Grid.Column="2" Grid.Row="3" Margin="50, 8, 50, 12" Content="Reset" FontSize="30" Background="Ivory" ToolTip="Очистить заданные значения"/>
+        <Button x:Name="CalculateButton" Grid.Column="2" Grid.Row="4" Margin="50, 8, 50, 12" Content="Calculate" FontSize="30" Background="Ivory" ToolTip="Вычислить результат"/>
     </Grid>
+    
 </Window>

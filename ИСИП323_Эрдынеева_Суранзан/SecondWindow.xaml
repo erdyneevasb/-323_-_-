@@ -1,0 +1,45 @@
+﻿<Window x:Class="ИСИП323_Эрдынеева_Суранзан.SecondWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ИСИП323_Эрдынеева_Суранзан"
+        mc:Ignorable="d"
+        Title="SecondWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Image x:Name="Image2" Grid.ColumnSpan="3" Grid.Row="0" Source="images/nmath2.png"/>
+        <StackPanel Grid.Column="0" Grid.Row="1" Orientation="Horizontal">
+            <TextBlock Text="X" Margin="10" Height="30" Width="30" TextAlignment="Center" FontSize="20" Background="WhiteSmoke" HorizontalAlignment="Left"/>
+            <TextBox x:Name="xValue2" Height="30" Width="200" HorizontalAlignment="Right" FontSize="20" ToolTip="Введите значение x"></TextBox>
+        </StackPanel>
+        <StackPanel Grid.Column="0" Grid.Row="2" Orientation="Horizontal">
+            <TextBlock Text="i" Margin="10" Height="30" Width="30" TextAlignment="Center" FontSize="20" Background="WhiteSmoke" HorizontalAlignment="Left"/>
+            <TextBox x:Name="iValue2" Height="30" Width="200" HorizontalAlignment="Right" FontSize="20" ToolTip="Введите значение i"></TextBox>
+        </StackPanel>
+        <StackPanel Grid.Column="0" Grid.Row="3" Margin="10" ToolTip="Выберите функцию f(x)">
+            <RadioButton x:Name="FuncOption_shx" GroupName="FunctionOption" Content="sh(x)" FontSize="20"></RadioButton>
+            <RadioButton x:Name="FuncOption_x2" GroupName="FunctionOption" Content="x²" FontSize="20"></RadioButton>
+            <RadioButton x:Name="FuncOption_e2" GroupName="FunctionOption" Content="e²" FontSize="20"></RadioButton>
+        </StackPanel>
+        <StackPanel Grid.ColumnSpan="2" Grid.Row="4" Orientation="Horizontal">
+            <TextBlock Text="Result" Margin="10" Height="30" Width="100" TextAlignment="Center" FontSize="20" Background="WhiteSmoke" HorizontalAlignment="Left"/>
+            <TextBox x:Name="ResultBox2" Height="30" Width="200" HorizontalAlignment="Right" FontSize="20" ToolTip="Здесь появится вычисленный результат"></TextBox>
+        </StackPanel>
+        <Button x:Name="NextButton2" Grid.Column="2" Grid.Row="1" Content="Next" Margin="50, 8, 50, 12" Background="Ivory" FontSize="20"/>
+        <Button x:Name="BackButton2" Grid.Column="2" Grid.Row="2" Content="Back" Margin="50, 8, 50, 12" Background="Ivory" FontSize="20"/>
+        <Button x:Name="ResetButton2" Height="30" Grid.Column="2" Grid.Row="3" Content="Reset" Margin="50, 8, 50, 12" Background="Ivory" FontSize="20"/>
+        <Button x:Name="CalculateButton2" Grid.Column="2" Grid.Row="4" Content="Calculate" Margin="50, 8, 50, 12" Background="Ivory" FontSize="20"/>
+    </Grid>
+</Window>
